@@ -15,8 +15,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": "~7.4||>=8.0",
-        "psr/cache": "^1.0",
-        "whirlwind-framework/framework": "*"
+        "psr/cache": "^1.0"
     },
     "autoload": {
         "psr-4": {
