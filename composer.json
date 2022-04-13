@@ -1,0 +1,26 @@
+{
+    "name": "whirlwind-framework/cache",
+    "description": "Whirlwind framework cache library",
+    "keywords": [
+        "cache"
+    ],
+    "authors": [
+        {
+            "name": "Alexander Stepanenko",
+            "email": "alex.stepanenko@gmail.com"
+        }
+    ],
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "minimum-stability": "dev",
+    "require": {
+        "php": "~7.4||>=8.0",
+        "psr/cache": "^1.0",
+        "whirlwind-framework/framework": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Whirlwind\\Cache\\": "src"
+        }
+    }
+}
