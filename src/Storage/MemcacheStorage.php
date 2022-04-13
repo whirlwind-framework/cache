@@ -49,7 +49,7 @@ class MemcacheStorage implements StorageInterface
 
     public function set($key, $value, $ttl = null)
     {
-        $this->memcache->set($key, $value, 0, $ttl);
+        return $this->memcache->set($key, $value, 0, $ttl);
     }
 
     public function delete($key)
@@ -70,7 +70,7 @@ class MemcacheStorage implements StorageInterface
 
     public function add($key, $value, $ttl = null)
     {
-        $this->memcache->add($key, $value, 0, $ttl);
+        return $this->memcache->add($key, $value, 0, $ttl);
     }
 
     public function increment($key)

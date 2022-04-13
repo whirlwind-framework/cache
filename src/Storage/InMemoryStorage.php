@@ -24,6 +24,7 @@ class InMemoryStorage implements StorageInterface
     public function set($key, $value, $ttl = null)
     {
         $this->data[$key] = $value;
+        return true;
     }
 
     public function delete($key)
@@ -39,6 +40,7 @@ class InMemoryStorage implements StorageInterface
     public function add($key, $value, $ttl = null)
     {
         $this->data[$key] = $value;
+        return true;
     }
 
     public function increment($key)
@@ -47,6 +49,7 @@ class InMemoryStorage implements StorageInterface
             $this->data[$key] = 0;
         }
         $this->data[$key]++;
+        return $this->data[$key];
     }
 
     public function getMultiple($keys, $default = null)

@@ -55,7 +55,7 @@ class MemcachedStorage implements StorageInterface
 
     public function set($key, $value, $ttl = null)
     {
-        $this->memcached->set($key, $value, $ttl);
+        return $this->memcached->set($key, $value, $ttl);
     }
 
     public function delete($key)
@@ -76,7 +76,7 @@ class MemcachedStorage implements StorageInterface
 
     public function add($key, $value, $ttl = null)
     {
-        $this->memcached->add($key, $value, $ttl);
+        return $this->memcached->add($key, $value, $ttl);
     }
 
     public function increment($key)

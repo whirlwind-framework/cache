@@ -72,7 +72,7 @@ class CacheProvider implements ProviderInterface
 
     public function add($key, $value, $ttl = null)
     {
-        $this->storage->add($key, $value, $ttl);
+        return $this->storage->add($key, $value, $ttl);
     }
 
     public function increment($key)
